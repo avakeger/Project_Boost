@@ -45,13 +45,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7003048046659983243}
   serializedVersion: 2
-  m_Mass: 0.1
-  m_Drag: 0
+  m_Mass: 1
+  m_Drag: 0.2
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!114 &1587471081
 MonoBehaviour:
@@ -65,6 +65,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 721061f3ebe82934aa50f249cab1d79d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rchThrust: 250
+  mainThrust: 25
 --- !u!82 &838983462195585806
 AudioSource:
   m_ObjectHideFlags: 0
@@ -77,7 +79,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 41fe9e42611c8004eb0d1b918f3061fe, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -312,7 +314,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 76d41b111de0c3c44ab05d5e1cf7b383, type: 2}
+      objectReference: {fileID: 2100000, guid: 6b7d43a274dedfa4ba27983f757200f2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ce820739ff73da4f9f740a801f82b18, type: 3}
 --- !u!4 &7003048046216394239 stripped
@@ -392,7 +394,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 76d41b111de0c3c44ab05d5e1cf7b383, type: 2}
+      objectReference: {fileID: 2100000, guid: 6b7d43a274dedfa4ba27983f757200f2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ce820739ff73da4f9f740a801f82b18, type: 3}
 --- !u!4 &6490021956524219028 stripped
